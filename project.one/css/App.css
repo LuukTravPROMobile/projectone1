@@ -1,0 +1,52 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #bb5812;
+  }
+    
+
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(8, 131, 158);
+  }
+  
+
+  .leaflet-popup-content {
+    font-size: 14px;
+    font-weight: bold;
+    color: #c4c4c4;
+    text-align: center;
+  }
+  
+  .leaflet-popup-tip-container {
+    visibility: hidden;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .leaflet-container {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  
+    .App {
+      height: 100%;
+      align-items: stretch;
+    }
+  }
+  
